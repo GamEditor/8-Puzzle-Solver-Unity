@@ -1,5 +1,5 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class PuzzleCell : MonoBehaviour, IPointerClickHandler
@@ -9,12 +9,12 @@ public class PuzzleCell : MonoBehaviour, IPointerClickHandler
     // Cell information
     public int m_Row, m_Column;
     public int m_CellNumber;
-    public TextMeshProUGUI m_CellText;
+    public Text m_CellText;
 
     private void Awake()
     {
         m_Parent = GetComponentInParent<Puzzle>();
-        m_CellText = GetComponent<TextMeshProUGUI>();
+        m_CellText = GetComponent<Text>();
     }
 
     public void OnPointerClick(PointerEventData eventData)

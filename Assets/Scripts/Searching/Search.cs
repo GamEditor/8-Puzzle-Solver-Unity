@@ -2,7 +2,6 @@
 using System.Text.RegularExpressions;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,9 +10,9 @@ public class Search : MonoBehaviour
     public enum SearchAlgorithm { BreadthFirstSearch, DepthFirstSearch, IterativeDeepeningSearch, AStar }
 
     [Header("UI Management")]
-    public TMP_Dropdown m_AlgorithmOptions;
+    public Dropdown m_AlgorithmOptions;
     public Button m_SearchButton;
-    public TextMeshProUGUI m_MessageText;
+    public Text m_MessageText;
 
     // for UI activation control
     public GameObject m_StartPanel;
